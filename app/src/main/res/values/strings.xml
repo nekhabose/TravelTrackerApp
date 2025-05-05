@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Travel Tracker</string>
+    <string name="app_logo">Application Logo</string>
+
+    <!-- Login/Sign Up -->
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="sign_up_prompt">No account? Sign Up</string>
+
+    <!-- Dashboard -->
+    <string name="my_trips">Trip Tracker</string>
+    <string name="logged_trips_header">Logged Trips</string>
+    <string name="future_trips_header">Future Trip Plans</string>
+    <string name="add_new_logged_trip_fab_desc">Add New Logged Trip</string>
+    <string name="plan_future_trip_fab_desc">Plan Future Trip</string>
+    <string name="no_trips_logged_yet">No trips logged yet.</string>
+    <string name="no_trips_logged_yet_add_one">No trips logged yet. Tap + to add one!</string>
+    <string name="no_future_trips_planned">No future trips planned yet.</string>
+    <string name="error_loading_trips">Error loading trips.</string>
+    <string name="error_loading_future_trips">Error loading future trips.</string>
+    <string name="logout">Logout</string>
+
+    <!-- Logged Trip Item / Detail -->
+    <string name="visited_prefix">Visited: %s</string>
+    <string name="duration_prefix">Duration: %s</string>
+    <string name="trip_thumbnail">Trip thumbnail</string>
+    <string name="trip_details_title">Trip Details</string>
+    <string name="trip_photo">Trip photo</string>
+    <string name="view_on_map">View on Map</string>
+    <string name="get_recommendations">Get Recommendations</string>
+    <string name="recommendations_for">Recommendations for %s</string>
+    <string name="error_loading_trip">Error loading trip details.</string>
+
+    <!-- Add Logged Trip -->
+    <string name="add_new_trip_title">Add New Logged Trip</string>
+    <string name="add_new_trip">Add New Trip</string>
+    <string name="city">City</string>
+    <string name="state_province">State/Province</string>
+    <string name="date_visited_yyyy_mm_dd">Date Visited (YYYY-MM-DD)</string>
+    <string name="duration_e_g_3_days_1_week">Duration (e.g., 3 days, 1 week)</string>
+    <string name="save_trip">Save Trip</string>
+    <string name="select_date">Select Date</string>
+    <string name="add_photos_label">Photos</string>
+    <string name="select_photo">Select Photo</string>
+    <string name="selected_photo_preview">Selected photo preview</string>
+
+    <!-- Future Trip Plan -->
+    <string name="plan_future_trip_title">Plan Future Trip</string>
+    <string name="planned_date_yyyy_mm_dd">Planned Date (YYYY-MM-DD)</string>
+    <string name="save_future_trip">Save Future Trip Plan</string>
+    <string name="future_trip_details_title">Future Trip Plan</string>
+    <string name="planned_prefix">Planned: %s</string>
+    <string name="itinerary_label">Suggested Itinerary:</string>
+
+    <!-- Map Activity -->
+    <string name="title_activity_map">Trip Location</string>
+
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="delete_confirmation_title">Confirm Delete</string>
+    <string name="delete_trip_confirmation_message">Are you sure you want to delete this logged trip? This cannot be undone.</string>
+    <string name="delete_future_trip_confirmation_message">Are you sure you want to delete this future trip plan? This cannot be undone.</string>
+    <string name="edit_logged_trip_title">Edit Logged Trip</string>
+    <string name="edit_future_trip_title">Edit Future Trip Plan</string>
+    <string name="delete_yes">Delete</string>
+    <string name="delete_no">Cancel</string>
+    <string name="trip_updated_success">Trip updated successfully!</string>
+    <string name="trip_update_failed">Failed to update trip:</string>
+    <string name="trip_deleted_success">Trip deleted successfully.</string>
+    <string name="trip_delete_failed">Failed to delete trip:</string>
+    <string name="future_plan_updated_success">Future plan updated successfully!</string>
+    <string name="future_plan_update_failed">Failed to update plan:</string>
+    <string name="future_plan_deleted_success">Future plan deleted successfully.</string>
+    <string name="future_plan_delete_failed">Failed to delete plan:</string>
+    <string name="update_trip">Update Trip</string>
+    <string name="update_future_trip">Update Plan</string>
+
+
+
+
+    <string name="default_image_description">Default image placeholder</string>
+
+</resources>

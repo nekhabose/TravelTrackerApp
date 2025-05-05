@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:strokeWidth="0dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewFutureIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_plan"
+            app:tint="?attr/colorPrimary"
+            android:contentDescription="Future Trip Icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/textViewFutureDestination"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textColor="?attr/colorPrimary"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFutureIcon"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFutureIcon"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFutureDatePlanned"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="new york, new york" />
+
+        <TextView
+            android:id="@+id/textViewFutureDatePlanned"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+        android:textAppearance="?attr/textAppearanceBody1"
+        android:textColor="?android:attr/textColorSecondary"
+        app:layout_constraintStart_toStartOf="@+id/textViewFutureDestination"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFutureDestination"
+        app:layout_constraintEnd_toEndOf="@+id/textViewFutureDestination"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFutureDuration"
+        tools:text="Planned: 2025-05-30" />
+
+        <TextView
+            android:id="@+id/textViewFutureDuration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAppearance="?attr/textAppearanceBody1"
+        android:textColor="?android:attr/textColorSecondary"
+        app:layout_constraintStart_toStartOf="@+id/textViewFutureDestination"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFutureDatePlanned"
+        app:layout_constraintEnd_toEndOf="@+id/textViewFutureDestination"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFutureIcon"
+        tools:text="Duration: 1 day" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

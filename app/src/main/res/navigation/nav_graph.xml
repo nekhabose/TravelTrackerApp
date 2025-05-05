@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.traveltracker.fragments.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.traveltracker.fragments.DashboardFragment"
+        android:label="@string/my_trips"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_addTripFragment"
+            app:destination="@id/addTripFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_tripDetailFragment"
+            app:destination="@id/tripDetailFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_addFutureTripFragment"
+            app:destination="@id/addFutureTripFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_futureTripDetailFragment"
+            app:destination="@id/futureTripDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addTripFragment"
+        android:name="com.example.traveltracker.fragments.AddTripFragment"
+        android:label="@string/add_new_trip_title"
+        tools:layout="@layout/fragment_add_trip">
+        <argument
+            android:name="tripToEdit"
+            app:argType="com.example.traveltracker.models.Trip"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/tripDetailFragment"
+        android:name="com.example.traveltracker.fragments.TripDetailFragment"
+        android:label="@string/trip_details_title"
+        tools:layout="@layout/fragment_trip_detail">
+        <argument
+            android:name="trip"
+            app:argType="com.example.traveltracker.models.Trip" />
+        <action
+            android:id="@+id/action_tripDetailFragment_to_mapActivity"
+            app:destination="@id/mapActivity" />
+        <action
+            android:id="@+id/action_tripDetailFragment_to_addTripFragment"
+            app:destination="@id/addTripFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addFutureTripFragment"
+        android:name="com.example.traveltracker.fragments.AddFutureTripFragment"
+        android:label="@string/plan_future_trip_title"
+        tools:layout="@layout/fragment_add_future_trip">
+        <argument
+            android:name="futureTripToEdit"
+            app:argType="com.example.traveltracker.models.FutureTrip"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/futureTripDetailFragment"
+        android:name="com.example.traveltracker.fragments.FutureTripDetailFragment"
+        android:label="@string/future_trip_details_title"
+        tools:layout="@layout/fragment_future_trip_detail">
+        <argument
+            android:name="future_trip"
+            app:argType="com.example.traveltracker.models.FutureTrip" />
+        <action
+            android:id="@+id/action_futureTripDetailFragment_to_mapActivity"
+            app:destination="@id/mapActivity" />
+        <action
+            android:id="@+id/action_futureTripDetailFragment_to_addFutureTripFragment"
+            app:destination="@id/addFutureTripFragment" />
+    </fragment>
+
+    <activity
+        android:id="@+id/mapActivity"
+        android:name="com.example.traveltracker.activities.MapActivity"
+        android:label="@string/title_activity_map"
+        tools:layout="@layout/activity_map" >
+        <argument android:name="latitude" app:argType="float" />
+        <argument android:name="longitude" app:argType="float" />
+        <argument android:name="destination_name" app:argType="string" app:nullable="true" />
+    </activity>
+
+</navigation>

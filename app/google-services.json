@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "297984231405",
+    "project_id": "traveltracker-d4de9",
+    "storage_bucket": "traveltracker-d4de9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297984231405:android:ce41ee3efcac097c1349e4",
+        "android_client_info": {
+          "package_name": "com.example.traveltracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC23Ok3stiyx7ZKiMz4X0zDqXp4QPnuOxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
